@@ -1,38 +1,42 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Override default */
+.Draftail-Toolbar {
+  background: transparent !important;
+  border: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DraftEditor-root {
+  overflow: hidden !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Override default */
+.Draftail-Editor {
+  border: none !important;
+  width: 60% !important;
+  margin-top: 100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 21px !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* Override default */
+.public-DraftEditor-content {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Override default */
+.public-DraftEditorPlaceholder-inner {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  color: rgb(133, 112, 112) !important;
+  font-size: 21px !important;
+  font-style: italic;
+}
+
+.Draftail-block--unstyled {
+  font-size: 21px !important;
 }
